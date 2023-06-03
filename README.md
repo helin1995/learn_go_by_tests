@@ -9,4 +9,4 @@
 * 编写足够的代码让测试通过
 * 重构
 
-## Ch2、Iterdation
+## Ch2、Iteration
