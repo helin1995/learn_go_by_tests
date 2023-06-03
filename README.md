@@ -10,3 +10,23 @@
 * 重构
 
 ## Ch2、Iteration
+
+1、基准测试（Benchmark）
+```go
+func BenchmarkFunc(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        Func()
+    }
+}
+```
+执行：go test -bench="."或者go test -bench=.
+函数会执行b.N次
+
+2、样例Example，完善文档，比如：
+```go
+func ExampleRepeat() {
+	repeated := Repeat("a")
+	fmt.Println(repeated)
+	// Output: aaaaa
+}
+```
